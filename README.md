@@ -3,7 +3,10 @@
 ## Setup
 
 1. Use this template → fork repository
-2. Enable GitHub Page on your repository's settings
+2. Enable GitHub Pages on your repository's settings
+    - Source: Branch `gh-pages`
+
+![GitHub Pages Setting](./docs/gh-pages.png)
 
 ## Add new rule
 
