@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "@textlint/editor-script-template",
+  "version": "1.0.0",
+  "description": "@textlint/editor script template",
+  "scripts": {
+    "website": "textlint-website-generator --outputDir dist"
+  },
+  "devDependencies": {
+    "@textlint/website-generator": "^0.10.0"
+  },
+  "dependencies": {
+    "textlint": "^11.9.0",
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-rule-no-todo": "^2.0.1"
+  }
+}

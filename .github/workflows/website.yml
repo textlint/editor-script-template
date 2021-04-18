@@ -1,0 +1,33 @@
+name: website
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Set Env
+        run: |
+          echo "OWNER_NAME=$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $1}')" >> $GITHUB_ENV
+          echo "REPO_NAME=$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}')" >> $GITHUB_ENV
+          echo "HOMEPAGE=$(echo "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY")" >> $GITHUB_ENV
+      - name: Install
+        run: npm install
+      - name: Build
+        run: npm run website -- --metadataName="${REPO_NAME}" --metadataNamespace="${HOMEPAGE}" --metadataHomepage="${HOMEPAGE}"
+        env:
+          OWNER_NAME: ${{ env.OWNER_NAME }}
+          REPO_NAME: ${{ env.REPO_NAME }}
+          HOMEPAGE: ${{ env.HOMEPAGE }}
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
