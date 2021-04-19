@@ -14,7 +14,8 @@ This template for [@textlint/editor](https://github.com/textlint/editor) worker 
 
 ## Add new rule
 
-    npm install textlint-rule-*
+    npm install textlint-rule-<you-want-to-add-rule>
+    # edit .textlintrc.json and add it
     git add .
     git commit -m "feat: add new rule"
 
