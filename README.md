@@ -12,6 +12,8 @@ This template for [@textlint/editor](https://github.com/textlint/editor) worker 
 
 ![GitHub Pages Setting](./docs/gh-pages.png)
 
+3. Visit `https://{yourname}.github.io/{yourrepo}/` after adding rules 
+
 ## Add new rule
 
     npm install textlint-rule-<you-want-to-add-rule>
