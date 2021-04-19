@@ -1,10 +1,12 @@
 # @textlint/editor-script-template
 
+This template for [@textlint/editor](https://github.com/textlint/editor) worker scripts.
+
 ## Setup
 
 1. Use this template → fork repository
    - Repository name: your favorite name
-   - [x] Include all branches
+   - ✔ Include all branches
 2. Enable GitHub Pages on your repository's settings
    - Source: Branch `gh-pages`
 
