@@ -3,6 +3,7 @@
     "comments": true
   },
   "rules": {
-    "no-todo": true
+    "no-todo": true,
+    "preset-jtf-style": true
   }
 }
