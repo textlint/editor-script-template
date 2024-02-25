@@ -1,7 +1,8 @@
 {
   "private": true,
-  "name": "@textlint/editor-script-template",
+  "name": "@knowledgelabo/kl-textlint-rules",
   "version": "1.0.0",
+  "homepage": "https://github.com/knowledgelabo/kl-textlint-rules",
   "description": "@textlint/editor script template",
   "scripts": {
     "website": "textlint-website-generator --outputDir dist"
@@ -12,6 +13,7 @@
   "dependencies": {
     "textlint": "^13.3.1",
     "textlint-filter-rule-comments": "^1.2.2",
-    "textlint-rule-no-todo": "^2.0.1"
+    "textlint-rule-no-todo": "^2.0.1",
+    "textlint-rule-preset-jtf-style": "^2.3.14"
   }
 }
