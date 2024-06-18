@@ -4,6 +4,13 @@
   },
   "rules": {
     "no-todo": true,
-    "preset-jtf-style": true
+    "preset-jtf-style": true,
+    "prh": {
+      "rulePaths": [
+        "./prh-rules/proper_noun.yml",
+        "./prh-rules/operation_proper_noun.yml",
+        "./prh-rules/operation_non_noun.yml"
+      ]
+    }
   }
 }

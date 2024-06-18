@@ -1,0 +1,26 @@
+version: 1
+rules:
+  - pattern:
+      - 頂く
+    expected: いただく
+  - pattern:
+      - 及び
+    expected: および
+  - pattern:
+      - 更に
+    expected: さらに
+  - pattern:
+      - 既に
+    expected: すでに
+  - pattern:
+      - 例えば
+    expected: たとえば
+  - pattern:
+      - 並びに
+    expected: ならびに
+  - pattern:
+      - 又は
+    expected: または
+  - pattern:
+      - 若しくは
+    expected: もしくは

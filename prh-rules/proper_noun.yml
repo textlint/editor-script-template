@@ -1,0 +1,32 @@
+version: 1
+rules:
+  - pattern:
+      - キャプチャ
+      - キャプチャー
+    expected: スクリーンショット
+  - pattern:
+      - スプレッドシート
+    expected: Googleスプレッドシート
+  - pattern:
+      - パソコン
+      - パーソナルコンピューター
+    expected: PC
+  - pattern:
+      - プロダクトコンサルティングチーム
+      - PC
+      - カスタマー
+    expected: お客様対応チーム
+  - pattern:
+      - プロダクトコンサルティングチーム
+      - PC
+      - カスタマー
+      - CS
+    expected: お客様対応チーム
+  - pattern:
+      - マネージボード
+      - MB
+    expected: Manageboard
+  - pattern:
+      - メンバー
+      - メンバ
+    expected: ユーザー

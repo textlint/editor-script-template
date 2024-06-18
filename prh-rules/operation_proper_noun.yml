@@ -1,0 +1,28 @@
+version: 1
+rules:
+  - pattern:
+      - Aプラン
+      - アドバイザープラン
+    expected: 会計事務所・コンサルティング企業向けプラン
+  - pattern:
+      - Mプラン
+      - マネジメントプラン
+    expected: 法人（一般企業向け）プラン
+  - pattern:
+      - カテゴリー
+    expected: カテゴリ
+  - pattern:
+      - 見通し表
+    expected: 業績見通し
+  - pattern:
+      - 段階損益
+    expected: 段階利益
+  - pattern:
+      - 取込
+    expected: 取り込み
+  - pattern:
+      - マスター
+    expected: マスタ
+  - pattern:
+      - メンバ
+    expected: メンバー
