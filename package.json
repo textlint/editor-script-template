@@ -10,7 +10,7 @@
     "@textlint/website-generator": "^0.16.1"
   },
   "dependencies": {
-    "textlint": "^14.1.0",
+    "textlint": "^15.2.2",
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-no-todo": "^2.0.1"
   }
